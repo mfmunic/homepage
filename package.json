@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://mfmunic.github.io/homepage",
   "dependencies": {
-    "eslint": "^4.19.1",
     "firebase": "^5.4.1",
     "gh-pages": "^1.2.0",
     "lodash": "^4.17.10",
@@ -14,7 +13,7 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^5.0.0-alpha.9",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^2.1.1",
     "redux": "^3.7.2",
     "redux-promise-middleware": "^5.1.1"
   },
@@ -28,5 +27,11 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
