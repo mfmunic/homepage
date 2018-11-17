@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
 // import _ from 'lodash';
 
-import Display from './Display';
-import Header from './Header';
-import Sidebar from './Sidebar';
+import Display from "./Display";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 
 class MainPage extends Component {
+  constructor(props) {
+    super();
+  }
+
   render() {
     return (
       <div id="fullPage">
@@ -22,7 +26,8 @@ class MainPage extends Component {
 
 function mapStateToProps(state) {
   return {
-    createBracket: state.createBracket
+    routing: state.routing,
+    display: state.display
   };
 }
 

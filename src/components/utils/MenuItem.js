@@ -1,18 +1,29 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import * as display from "../../modules/actions/display";
 
 class MenuItem extends Component {
+  setLocation(item, color) {
+    if (item === "Resume") {
+      item = "Resume";
+    }
+    this.props.dispatch(display.menu(item, color));
+  }
+
   render() {
     const { text, color } = this.props;
+    const resume = "R\u00E9sum\u00E9";
     return (
-      <div className="menuItem">
-        <div id={`menuTail-${color}`} />
-        <div className={`${color}BG menuRibbon`}>
-          <p>
-            <strong>{text}</strong>
-          </p>
+      <div id="fullMenuItem" onClick={this.setLocation.bind(this, text, color)}>
+        <div id="menuShadow" />
+        <div className="menuItem">
+          <div id={`menuTail-${color}`} />
+          <div className={`${color}BG menuRibbon`}>
+            <p>
+              <strong>{text === "Resume" ? resume : text}</strong>
+            </p>
+          </div>
         </div>
-        <div id={`menuStart-${color}`} />
       </div>
     );
   }
@@ -20,7 +31,8 @@ class MenuItem extends Component {
 
 function mapStateToProps(state) {
   return {
-    routing: state.routing
+    routing: state.routing,
+    display: state.display
   };
 }
 

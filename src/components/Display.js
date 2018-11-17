@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
 class Display extends Component {
   render() {
-    return (
-      <div id="display">Display</div>
-    );
+    return <div id="display">Display</div>;
   }
 }
 
 function mapStateToProps(state) {
   return {
-    routing: state.routing
+    routing: state.routing,
+    display: state.display
   };
 }
 

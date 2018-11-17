@@ -23,7 +23,6 @@
 #nameLogo {
   z-index: 10;
   margin: 0 auto;
-  background-color: #506296;
   border-radius: 50%;
   border: 6px white solid;
   width: 194px;
@@ -47,4 +46,8 @@
 
 #nameLogo h1:last-child {
   margin-top: -15px;
+}
+
+#menu {
+  margin-top: 50px;
 }

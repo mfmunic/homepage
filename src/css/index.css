@@ -3,6 +3,7 @@
 @import "./sidebar.css";
 @import "./display.css";
 @import "./menuItem.css";
+@import "./utils.css";
 
 body {
   margin: 0;

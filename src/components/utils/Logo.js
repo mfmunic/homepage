@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class Header extends Component {
+class Logo extends Component {
   render() {
+    const { color } = this.props.display;
     return (
-      <div>
-        <div id="header">
-          <h1 id="headerText">Header</h1>
+      <div id="logoBorder">
+        <div id="nameLogo" className={`${color}BG`}>
+          <h1>Marc</h1>
+          <h1>Munic</h1>
         </div>
-        <div id="lowerLine" />
       </div>
     );
   }
@@ -21,4 +22,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps)(Logo);
