@@ -1,0 +1,7 @@
+#fullPage{
+  display: flex;
+}
+
+#notSidebar{
+  width: 100%;
+}

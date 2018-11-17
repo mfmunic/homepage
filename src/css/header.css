@@ -1,0 +1,18 @@
+#header{
+  height: 58px;
+  width: calc(100% - 120px);
+  padding-top: 5px;
+  padding-left: 90px;
+}
+
+#headerText{
+  margin: 5px 0;
+}
+
+#lowerLine{
+  height: 6px;
+  width: 100%;
+  border-style: solid;
+  border-width: 6px 0;
+  border-color: #506296;
+}
