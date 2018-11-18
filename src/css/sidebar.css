@@ -20,6 +20,14 @@
   z-index: 0;
 }
 
+#templogo {
+  margin: 10px -20px 0 10px;
+  min-width: 216px;
+  min-height: 216px;
+  display: flex;
+  align-items: center;
+}
+
 #nameLogo {
   z-index: 10;
   margin: 0 auto;

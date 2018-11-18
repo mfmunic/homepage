@@ -1,7 +1,7 @@
 import * as actionTypes from "../actionTypes";
 // import _ from "lodash";
 
-const initialState = { location: "home", color: "blue" };
+const initialState = { location: "Homepage", color: "blue" };
 
 export default function(state = initialState, action = {}) {
   switch (action.type) {

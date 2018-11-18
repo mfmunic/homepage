@@ -7,10 +7,6 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 
 class MainPage extends Component {
-  constructor(props) {
-    super();
-  }
-
   render() {
     return (
       <div id="fullPage">

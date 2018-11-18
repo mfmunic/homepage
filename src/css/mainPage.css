@@ -1,7 +1,7 @@
-#fullPage{
+#fullPage {
   display: flex;
 }
 
-#notSidebar{
-  width: 100%;
+#notSidebar {
+  width: calc(100% - 150px);
 }

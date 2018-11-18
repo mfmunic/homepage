@@ -1,19 +1,71 @@
-.blueBG {
+.blue-BG {
   background-color: #506296;
 }
 
-.greenBG {
+.green-BG {
   background-color: #2ea113;
 }
 
-.orangeBG {
+.orange-BG {
   background-color: #ff7733;
 }
 
-.yellowBG {
+.yellow-BG {
   background-color: #edb458;
 }
 
-.redBG {
+.red-BG {
   background-color: #990000;
+}
+
+.orange-Text {
+  color: #ff7733;
+}
+
+.yellow-Text {
+  color: #edb458;
+}
+
+.red-Text {
+  color: #990000;
+}
+
+.green-Text {
+  color: #2ea113;
+}
+
+.blue-Text {
+  color: #506296;
+}
+
+.orange-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #ff7733 100%);
+}
+
+.yellow-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #edb458 100%);
+}
+
+.red-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #990000 100%);
+}
+
+.green-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #2ea113 100%);
+}
+
+.blue-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #506296 100%);
+}
+
+#nameLogo:hover {
+  cursor: context-menu;
+}
+
+.menuRibbon:hover {
+  cursor: pointer;
+}
+
+#header:hover {
+  cursor: context-menu;
 }
