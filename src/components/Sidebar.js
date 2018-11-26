@@ -5,14 +5,20 @@ import Logo from "./utils/Logo";
 
 class Sidebar extends Component {
   render() {
+    const year = new Date().getFullYear();
     return (
       <div id="sidebar">
-        <Logo />
-        <div id="menu">
-          <MenuItem text="About" color="red" />
-          <MenuItem text="Resume" color="yellow" />
-          <MenuItem text="Portfolio" color="green" />
-          <MenuItem text="Contact" color="orange" />
+        <div>
+          <Logo />
+          <div id="menu">
+            <MenuItem text="About" color="red" />
+            <MenuItem text="Resume" color="yellow" />
+            <MenuItem text="Portfolio" color="green" />
+            <MenuItem text="Contact" color="orange" />
+          </div>
+        </div>
+        <div id="copyright">
+          Marc Munic {"\u00A9"} {year}
         </div>
       </div>
     );
