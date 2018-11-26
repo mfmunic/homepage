@@ -1,3 +1,24 @@
-#display{
-  padding: 100px 0 0 100px;
+#display {
+  /* padding: 100px 0 0 100px; */
+  margin: 20px 200px 0 90px;
+  height: calc(100vh - 83px);
+  /* height: 100vh; */
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links ul li {
+  margin: 10px auto;
+}
+
+.links ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.links ul li a img {
+  width: 40px;
+  margin-right: 10px;
 }

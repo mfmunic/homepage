@@ -38,6 +38,26 @@
   color: #506296;
 }
 
+.orange-border {
+  border-color: #ff7733;
+}
+
+.yellow-border {
+  border-color: #edb458;
+}
+
+.red-border {
+  border-color: #990000;
+}
+
+.green-border {
+  border-color: #2ea113;
+}
+
+.blue-border {
+  border-color: #506296;
+}
+
 .orange-HeaderBorder {
   border-image: linear-gradient(to right, #506296 0%, #ff7733 100%);
 }

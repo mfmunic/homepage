@@ -37,6 +37,7 @@
   height: 194px;
   color: white;
   transform: rotate(350deg);
+  transition: 500ms;
 }
 
 #nameLogo h1 {
