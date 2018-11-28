@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class HomeToolbar extends Component {
+import ToolbarButton from "../utils/ToolbarButton";
+
+class PortfolioToolbar extends Component {
   render() {
+    const color = "green";
     return (
       <div>
-        <ul>
-          <li>Homepage</li>
-          <li>GoT Hangman</li>
-          <li>RPSLS</li>
-          <li>Triviagame</li>
-          <li>Dogepile</li>
-        </ul>
+        <ToolbarButton text="Homepage" color={color} />
+        <ToolbarButton text="GoT Hangman" color={color} />
+        <ToolbarButton text="RPSLS" color={color} />
+        <ToolbarButton text="Triviagame" color={color} />
+        <ToolbarButton text="Dogepile" color={color} />
       </div>
     );
   }
@@ -24,4 +25,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(HomeToolbar);
+export default connect(mapStateToProps)(PortfolioToolbar);

@@ -1,25 +1,29 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import HomeToolbar from "./toolbars/HomeToolbar";
-import AboutToolbar from "./toolbars/AboutToolbar";
-import ResumeToolbar from "./toolbars/ResumeToolbar";
+// import HomeToolbar from "./toolbars/HomeToolbar";
+// import AboutToolbar from "./toolbars/AboutToolbar";
+// import ResumeToolbar from "./toolbars/ResumeToolbar";
 import PortfolioToolbar from "./toolbars/PortfolioToolbar";
-import ContactToolbar from "./toolbars/ContactToolbar";
+// import ContactToolbar from "./toolbars/ContactToolbar";
 
 class Header extends Component {
   toolbarPicker(location) {
     switch (location) {
       case "About":
-        return <AboutToolbar />;
+        // return <AboutToolbar />;
+        return <div />;
       case "Contact":
-        return <ContactToolbar />;
+        // return <ContactToolbar />;
+        return <div />;
       case "Resume":
-        return <ResumeToolbar />;
+        // return <ResumeToolbar />;
+        return <div />;
       case "Portfolio":
         return <PortfolioToolbar />;
       default:
-        return <HomeToolbar />;
+        // return <HomeToolbar />;
+        return <div />;
     }
   }
   render() {
@@ -44,7 +48,7 @@ class Header extends Component {
             alt="Sexy Beast"
             id="sexyBeast"
           />
-          {/* {toolbar} */}
+          {toolbar}
         </div>
       </div>
     );

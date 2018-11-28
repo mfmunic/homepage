@@ -6,3 +6,10 @@ export function menu(menuItem, color) {
     payload: { menuItem, color }
   };
 }
+
+export function toolbar(toolbarItem) {
+  return {
+    type: actionTypes.TOOLBAR_ITEM,
+    payload: toolbarItem
+  };
+}

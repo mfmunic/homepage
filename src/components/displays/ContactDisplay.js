@@ -102,7 +102,7 @@ class ContactDisplay extends Component {
         <hr />
         <div className="email">
           <h3>E-mail</h3>
-          <a href="#">mfmunic@gmail.com</a>
+          mfmunic@gmail.com
         </div>
       </div>
     );

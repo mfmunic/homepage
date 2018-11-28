@@ -1,7 +1,9 @@
 #display {
   /* padding: 100px 0 0 100px; */
-  margin: 20px 200px 0 90px;
+  margin: 20px 0 0 90px;
   height: calc(100vh - 83px);
+  overflow: auto;
+  width: 100%;
   /* height: 100vh; */
 }
 
@@ -21,4 +23,29 @@
 .links ul li a img {
   width: 40px;
   margin-right: 10px;
+}
+#homeDisplay {
+  height: 100%;
+  width: 50%;
+  margin-top: 100px;
+}
+#resumeDisplay {
+  height: 100%;
+  width: 75%;
+}
+#resumeIframe {
+  width: 100%;
+  height: 98%;
+}
+
+#portfolioDisplay {
+  width: 64%;
+}
+
+.preview {
+  width: 100%;
+}
+
+#gameofhangman {
+  height: 75%;
 }

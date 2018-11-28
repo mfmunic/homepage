@@ -3,7 +3,16 @@ import { connect } from "react-redux";
 
 class PortfolioDisplay extends Component {
   render() {
-    return <div id="display">Display</div>;
+    return (
+      <div id="portfolioDisplay">
+        <img
+          className="preview"
+          id="gameofhangman"
+          src={require("../utils/images/gohSG.png")}
+        />
+        <p>Game of Hangman</p>
+      </div>
+    );
   }
 }
 
