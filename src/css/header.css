@@ -50,6 +50,21 @@
   transition: 500ms;
 }
 
+.imageHolder {
+  display: block;
+}
+#masToolbar {
+  position: absolute;
+  width: 300px;
+  left: -126px;
+  top: -3px;
+  /* clip-path: polygon(130px 0px, 280px 0px, 280px 225px, 130px 225px); */
+  clip-path: inset(0 19px 0 129px round 5px);
+}
+
+#portfolioTools {
+  margin-top: 226px;
+}
 #sexyBeast {
   width: 100%;
   border-radius: 5px 5px;

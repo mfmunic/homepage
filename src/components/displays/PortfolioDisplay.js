@@ -1,18 +1,27 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import GOH from "./portfolioItems/GOHPI";
+import Homepage from "./portfolioItems/HomepagePI";
+import RPSLS from "./portfolioItems/RPSLSPI";
+import Triviagame from "./portfolioItems/TriviagamePI";
+
 class PortfolioDisplay extends Component {
+  decidedDisplay(chosen) {
+    switch (chosen) {
+      case "GOH":
+        return <GOH />;
+      case "RPSLS":
+        return <RPSLS />;
+      case "Triviagame":
+        return <Triviagame />;
+      default:
+        return <Homepage />;
+    }
+  }
   render() {
-    return (
-      <div id="portfolioDisplay">
-        <img
-          className="preview"
-          id="gameofhangman"
-          src={require("../utils/images/gohSG.png")}
-        />
-        <p>Game of Hangman</p>
-      </div>
-    );
+    const displayItem = this.decidedDisplay(this.props.display.toolbar);
+    return <div id="portfolioDisplay">{displayItem}</div>;
   }
 }
 

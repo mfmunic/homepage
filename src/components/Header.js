@@ -42,14 +42,11 @@ class Header extends Component {
         </div>
         <div id="logoBorderHeader" />
         <div id="lowerLine" className={`${color}-HeaderBorder`} />
-        <div id="toolbar" className={`${color}-border`}>
-          <img
-            src={require("./utils/images/Marc.png")}
-            alt="Sexy Beast"
-            id="sexyBeast"
-          />
-          {toolbar}
-        </div>
+        {location === "Portfolio" && (
+          <div id="toolbar" className={`${color}-border`}>
+            {toolbar}
+          </div>
+        )}
       </div>
     );
   }

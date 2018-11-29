@@ -113,3 +113,9 @@
 .toolbarButton-inactive:hover {
   cursor: pointer;
 }
+
+.buttonLinks button {
+  font-size: 35px;
+  background-color: #2ea113;
+  color: white;
+}

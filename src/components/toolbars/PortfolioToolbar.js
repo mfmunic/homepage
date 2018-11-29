@@ -8,11 +8,25 @@ class PortfolioToolbar extends Component {
     const color = "green";
     return (
       <div>
-        <ToolbarButton text="Homepage" color={color} />
-        <ToolbarButton text="GoT Hangman" color={color} />
-        <ToolbarButton text="RPSLS" color={color} />
-        <ToolbarButton text="Triviagame" color={color} />
-        <ToolbarButton text="Dogepile" color={color} />
+        {/* <img
+          src={require("../utils/images/Marc.png")}
+          alt="Sexy Beast"
+          id="sexyBeast"
+        /> */}
+        <div className="imageHolder">
+          <img
+            src={require("../utils/images/marcandstatue.jpg")}
+            alt="Sexy Beast"
+            id="masToolbar"
+          />
+        </div>
+        <div id="portfolioTools">
+          <ToolbarButton text="Homepage" color={color} />
+          <ToolbarButton text="GOH" color={color} />
+          <ToolbarButton text="RPSLS" color={color} />
+          <ToolbarButton text="Triviagame" color={color} />
+          {/* <ToolbarButton text="Dogepile" color={color} /> */}
+        </div>
       </div>
     );
   }

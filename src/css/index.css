@@ -4,6 +4,7 @@
 @import "./display.css";
 @import "./menuItem.css";
 @import "./utils.css";
+@import "./homepageDisplay.css";
 
 body {
   margin: 0;
