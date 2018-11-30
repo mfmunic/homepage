@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import AboutText from "./texts/AboutText";
+
 class AboutDisplay extends Component {
   render() {
-    return <div id="display">Display</div>;
+    return <div id="aboutDisplay">{AboutText}</div>;
   }
 }
 

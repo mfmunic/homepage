@@ -2,27 +2,23 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 // import HomeToolbar from "./toolbars/HomeToolbar";
-// import AboutToolbar from "./toolbars/AboutToolbar";
-// import ResumeToolbar from "./toolbars/ResumeToolbar";
+import AboutToolbar from "./toolbars/AboutToolbar";
+import ResumeToolbar from "./toolbars/ResumeToolbar";
 import PortfolioToolbar from "./toolbars/PortfolioToolbar";
-// import ContactToolbar from "./toolbars/ContactToolbar";
+import ContactToolbar from "./toolbars/ContactToolbar";
 
 class Header extends Component {
   toolbarPicker(location) {
     switch (location) {
       case "About":
-        // return <AboutToolbar />;
-        return <div />;
+        return <AboutToolbar />;
       case "Contact":
-        // return <ContactToolbar />;
-        return <div />;
+        return <ContactToolbar />;
       case "Resume":
-        // return <ResumeToolbar />;
-        return <div />;
+        return <ResumeToolbar />;
       case "Portfolio":
         return <PortfolioToolbar />;
       default:
-        // return <HomeToolbar />;
         return <div />;
     }
   }
@@ -42,7 +38,7 @@ class Header extends Component {
         </div>
         <div id="logoBorderHeader" />
         <div id="lowerLine" className={`${color}-HeaderBorder`} />
-        {location === "Portfolio" && (
+        {location !== "Homepage" && (
           <div id="toolbar" className={`${color}-border`}>
             {toolbar}
           </div>

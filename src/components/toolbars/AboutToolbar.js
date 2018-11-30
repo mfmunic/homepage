@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class HomeToolbar extends Component {
+class AboutToolbar extends Component {
   render() {
     return (
       <div>
+        <div className="imageHolder">
+          <img
+            src={require("../utils/images/marcandtractor.png")}
+            alt="Sexy Beast"
+            id="matToolbar"
+          />
+        </div>
         <ul />
       </div>
     );
@@ -18,4 +25,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(HomeToolbar);
+export default connect(mapStateToProps)(AboutToolbar);

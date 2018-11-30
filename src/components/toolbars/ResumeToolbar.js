@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class HomeToolbar extends Component {
+class ResumeToolbar extends Component {
   render() {
     return (
       <div>
+        <img
+          src={require("../utils/images/Marc.png")}
+          alt="Sexy Beast"
+          id="sexyBeast"
+        />
         <ul>
           <li>Work Experience</li>
           <li>Skills</li>
@@ -21,4 +26,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(HomeToolbar);
+export default connect(mapStateToProps)(ResumeToolbar);
