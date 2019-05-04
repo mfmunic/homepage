@@ -1,6 +1,17 @@
 #homeDisplay {
   height: 100%;
   width: 50%;
+  &-intro {
+    color: black;
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    border-top: 3px solid #506296;
+    border-bottom: 3px solid #506296;
+    z-index: -1;
+  }
 }
 
 .images {
@@ -32,19 +43,6 @@
   margin-left: 200px;
   margin-top: -300px;
   clip-path: polygon(700px 300px, 700px 700px, 1000px 700px, 1000px 300px);
-}
-
-#intro {
-  color: black;
-  position: absolute;
-  /* top: 495px; */
-  bottom: 140px;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  border-top: 3px solid #506296;
-  border-bottom: 3px solid #506296;
-  z-index: -1;
 }
 
 #intro h1 {

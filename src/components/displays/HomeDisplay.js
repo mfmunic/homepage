@@ -35,15 +35,15 @@ class HomeDisplay extends Component {
             alt="Marc"
           />
         </div>
-        <div id="intro">
-          <h1 id="introLine1">
+        <div id="homeDisplay-intro">
+          <h1 id="homeDisplay-intro-Line1">
             Hello, I'm{" "}
-            <span id="myName" className="blue-Text">
+            <span id="homeDisplay-intro-Line1--myName" className="blue-Text">
               Marc F. Munic
             </span>
             .
           </h1>
-          <h1 id="introLine2">I'm a full-stack web developer.</h1>
+          <h1 id="homeDisplay-intro-Line2">I'm a full-stack web developer.</h1>
         </div>
       </div>
     );

@@ -15,7 +15,7 @@ class RPSLS extends Component {
         />
         <a
           href="https://mfmunic.github.io/rock-paper-scissors/"
-          target="_blank"
+          target="noopener"
           className="buttonLinks"
         >
           <button>Rock Paper Scissors Lizard Spock</button>
