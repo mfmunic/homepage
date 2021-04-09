@@ -1,13 +1,12 @@
 import * as actionTypes from "../actionTypes";
-// import _ from "lodash";
 
 const initialState = {
   location: "Homepage",
   color: "blue",
-  toolbar: "default"
+  toolbar: "default",
 };
 
-export default function(state = initialState, action = {}) {
+export default function mpReducers(state = initialState, action = {}) {
   switch (action.type) {
     case `${actionTypes.DISPLAY_ITEM}`:
       const { menuItem, color } = action.payload;
@@ -20,13 +19,13 @@ export default function(state = initialState, action = {}) {
         ...state,
         location: menuItem,
         color: color,
-        toolbar: start
+        toolbar: start,
       };
 
     case `${actionTypes.TOOLBAR_ITEM}`:
       return {
         ...state,
-        toolbar: action.payload
+        toolbar: action.payload,
       };
 
     default:

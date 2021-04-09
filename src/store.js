@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import promiseMiddleware from "redux-promise-middleware";
-import createHistory from "history/createBrowserHistory";
+import { createBrowserHistory } from "history";
 
 import rootReducer from "./modules/rootReducer";
 
-export const history = createHistory();
+export const history = createBrowserHistory();
 
 const initialState = {};
 const enhancers = [];
@@ -17,10 +17,7 @@ if (process.env.NODE_ENV === "development") {
   }
 }
 
-const composedEnhancers = compose(
-  applyMiddleware(...middleware),
-  ...enhancers
-);
+const composedEnhancers = compose(applyMiddleware(...middleware), ...enhancers);
 
 const store = createStore(rootReducer, initialState, composedEnhancers);
 

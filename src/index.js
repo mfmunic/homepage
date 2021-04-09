@@ -1,18 +1,15 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
+import React from "react";
+import { render } from "react-dom";
 
-import './css/index.css';
-import MainPage from './components/MainPage';
-import store from './store';
-// import registerServiceWorker from './registerServiceWorker';
+import "./css/index.css";
+import { MainPage } from "./components/MainPage";
+import { AppProvider } from "./context/appContext";
 
 render(
-    <Provider store={store}>
-      <MainPage />
-    </Provider>,
-    document.getElementById('root')
-  );
-
-
-// registerServiceWorker();
+  // <Provider store={store}>
+  <AppProvider>
+    <MainPage />
+  </AppProvider>,
+  // </Provider>,
+  document.getElementById("root")
+);
