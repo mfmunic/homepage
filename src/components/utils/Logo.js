@@ -7,7 +7,7 @@ export const Logo = () => {
 
   return (
     <div id="templogo">
-      <div id="nameLogo" className={`${color}-BG`} onClick={() => updateState({ location: "Homepage", color: "blue" })}>
+      <div id="nameLogo" className={`BG--${color}`} onClick={() => updateState({ location: "Homepage", color: "blue" })}>
         <h1>Marc</h1>
         <h1>Munic</h1>
       </div>

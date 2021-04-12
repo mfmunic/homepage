@@ -10,8 +10,8 @@ export const MenuItem = (props) => {
     <div id="fullMenuItem" onClick={() => updateState({ location: text, color })}>
       <div id="menuShadow" />
       <div className="menuItem">
-        <div id={`menuTail-${color}`} />
-        <div className={`${color}-BG menuRibbon`}>
+        <div className={`menuTail menuTail--${color}`} />
+        <div className={`BG--${color} menuRibbon`}>
           <p>
             <strong>{text === "Resume" ? "R\u00E9sum\u00E9" : text}</strong>
           </p>

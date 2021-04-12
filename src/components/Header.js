@@ -30,14 +30,14 @@ export const Header = () => {
   return (
     <div>
       <div id="header">
-        <h1 id="headerText" className={`${color}-Text`}>
+        <h1 id="headerText" className={`Text--${color}`}>
           <strong>{location === "Resume" ? "R\u00C9SUM\u00C9" : location.toUpperCase()}</strong>
         </h1>
       </div>
       <div id="logoBorderHeader" />
-      <div id="lowerLine" className={`${color}-HeaderBorder`} />
+      <div id="lowerLine" className={`HeaderBorder--${color}`} />
       {location !== "Homepage" && (
-        <div id="toolbar" className={`${color}-border`}>
+        <div id="toolbar" className={`Border--${color}`}>
           {toolbar}
         </div>
       )}

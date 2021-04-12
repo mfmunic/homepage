@@ -75,3 +75,21 @@ $red: #990000;
     border-image: linear-gradient(to right, $blue 0%, $red 100%);
   }
 }
+
+.menuTail {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  &--orange {
+    border-bottom: 50px solid $orange;
+  }
+  &--green {
+    border-bottom: 50px solid $green;
+  }
+  &--yellow {
+    border-bottom: 50px solid $yellow;
+  }
+  &--red {
+    border-bottom: 50px solid $red;
+  }
+}

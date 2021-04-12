@@ -242,50 +242,6 @@
   align-items: center;
 }
 
-.greenBG {
-  background-color: #2ea113;
-}
-
-#menuTail-green {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid #2ea113;
-  border-left: 35px solid transparent;
-}
-
-.orangeBG {
-  background-color: #ff7733;
-}
-
-#menuTail-orange {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid #ff7733;
-  border-left: 35px solid transparent;
-}
-
-.yellowBG {
-  background-color: #edb458;
-}
-
-#menuTail-yellow {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid #edb458;
-  border-left: 35px solid transparent;
-}
-
-.redBG {
-  background-color: #990000;
-}
-
-#menuTail-red {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid #990000;
-  border-left: 35px solid transparent;
-}
-
 #menuShadow {
   width: 0;
   height: 0px;
@@ -295,12 +251,6 @@
   border-bottom: 9px solid transparent;
 }
 
-/* #menuShadow-red:active {
-  width: 0;
-  height: 0;
-  border-top: 50px solid #990000;
-  border-right: 35px solid transparent;
-} */
 .homeDisplay {
   height: 100%;
   width: 50%;
@@ -454,84 +404,22 @@
   border-image: linear-gradient(to right, #506296 0%, #990000 100%);
 }
 
-.blue-BG {
-  background-color: #506296;
+.menuTail {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
 }
-
-.green-BG {
-  background-color: #2ea113;
+.menuTail--orange {
+  border-bottom: 50px solid #ff7733;
 }
-
-.orange-BG {
-  background-color: #ff7733;
+.menuTail--green {
+  border-bottom: 50px solid #2ea113;
 }
-
-.yellow-BG {
-  background-color: #edb458;
+.menuTail--yellow {
+  border-bottom: 50px solid #edb458;
 }
-
-.red-BG {
-  background-color: #990000;
-}
-
-.orange-Text {
-  color: #ff7733;
-}
-
-.yellow-Text {
-  color: #edb458;
-}
-
-.red-Text {
-  color: #990000;
-}
-
-.green-Text {
-  color: #2ea113;
-}
-
-.blue-Text {
-  color: #506296;
-}
-
-.orange-border {
-  border-color: #ff7733;
-}
-
-.yellow-border {
-  border-color: #edb458;
-}
-
-.red-border {
-  border-color: #990000;
-}
-
-.green-border {
-  border-color: #2ea113;
-}
-
-.blue-border {
-  border-color: #506296;
-}
-
-.orange-HeaderBorder {
-  border-image: linear-gradient(to right, #506296 0%, #ff7733 100%);
-}
-
-.yellow-HeaderBorder {
-  border-image: linear-gradient(to right, #506296 0%, #edb458 100%);
-}
-
-.red-HeaderBorder {
-  border-image: linear-gradient(to right, #506296 0%, #990000 100%);
-}
-
-.green-HeaderBorder {
-  border-image: linear-gradient(to right, #506296 0%, #2ea113 100%);
-}
-
-.blue-HeaderBorder {
-  border-image: linear-gradient(to right, #506296 0%, #506296 100%);
+.menuTail--red {
+  border-bottom: 50px solid #990000;
 }
 
 #nameLogo:hover {
