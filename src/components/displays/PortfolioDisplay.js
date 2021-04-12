@@ -1,13 +1,14 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { useContext } from "react";
+import { GOH } from "./portfolioItems/GOHPI";
+import { RPSLS } from "./portfolioItems/RPSLSPI";
+import { AppContext } from "../../context/appContext";
+import { HomepagePI } from "./portfolioItems/HomepagePI";
+import { Triviagame } from "./portfolioItems/TriviagamePI";
 
-import GOH from "./portfolioItems/GOHPI";
-import Homepage from "./portfolioItems/HomepagePI";
-import RPSLS from "./portfolioItems/RPSLSPI";
-import Triviagame from "./portfolioItems/TriviagamePI";
+export const PortfolioDisplay = () => {
+  const { toolbar } = useContext(AppContext);
 
-class PortfolioDisplay extends Component {
-  decidedDisplay(chosen) {
+  const decidedDisplay = (chosen) => {
     switch (chosen) {
       case "GOH":
         return <GOH />;
@@ -16,20 +17,9 @@ class PortfolioDisplay extends Component {
       case "Triviagame":
         return <Triviagame />;
       default:
-        return <Homepage />;
+        return <HomepagePI />;
     }
-  }
-  render() {
-    const displayItem = this.decidedDisplay(this.props.display.toolbar);
-    return <div id="portfolioDisplay">{displayItem}</div>;
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    routing: state.routing,
-    display: state.display
   };
-}
-
-export default connect(mapStateToProps)(PortfolioDisplay);
+  const displayItem = decidedDisplay(toolbar);
+  return <div id="portfolioDisplay">{displayItem}</div>;
+};

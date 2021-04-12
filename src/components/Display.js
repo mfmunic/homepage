@@ -1,39 +1,40 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useContext, useEffect } from "react";
 
-import HomeDisplay from "./displays/HomeDisplay";
-import AboutDisplay from "./displays/AboutDisplay";
-import ResumeDisplay from "./displays/ResumeDisplay";
-import PortfolioDisplay from "./displays/PortfolioDisplay";
-import ContactDisplay from "./displays/ContactDisplay";
+import { AppContext } from "../context/appContext";
 
-class Display extends Component {
-  displayPicker(location) {
+import { HomeDisplay } from "./displays/HomeDisplay";
+import { AboutDisplay } from "./displays/AboutDisplay";
+import { ResumeDisplay } from "./displays/ResumeDisplay";
+import { ContactDisplay } from "./displays/ContactDisplay";
+import { PortfolioDisplay } from "./displays/PortfolioDisplay";
+
+export const Display = () => {
+  const { location } = useContext(AppContext);
+  const [display, setDisplay] = useState();
+
+  useEffect(() => {
+    displayPicker();
+  }, [location]);
+
+  const displayPicker = () => {
     switch (location) {
       case "About":
-        return <AboutDisplay />;
+        setDisplay(<AboutDisplay />);
+        break;
       case "Contact":
-        return <ContactDisplay />;
+        setDisplay(<ContactDisplay />);
+        break;
       case "Resume":
-        return <ResumeDisplay />;
+        setDisplay(<ResumeDisplay />);
+        break;
       case "Portfolio":
-        return <PortfolioDisplay />;
+        setDisplay(<PortfolioDisplay />);
+        break;
       default:
-        return <HomeDisplay />;
+        setDisplay(<HomeDisplay />);
     }
-  }
-  render() {
-    const { location } = this.props.display;
-    const display = this.displayPicker(location);
-    return <div id="display">{display}</div>;
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    routing: state.routing,
-    display: state.display
   };
-}
 
-export default connect(mapStateToProps)(Display);
+  return <div id="display">{display}</div>;
+};
