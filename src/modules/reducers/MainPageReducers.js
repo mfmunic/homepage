@@ -1,32 +1,31 @@
-import * as actionTypes from "../actionTypes";
-// import _ from "lodash";
+import * as actionTypes from '../actionTypes';
 
 const initialState = {
-  location: "Homepage",
-  color: "blue",
-  toolbar: "default"
+  location: 'Homepage',
+  color: 'blue',
+  toolbar: 'default',
 };
 
-export default function(state = initialState, action = {}) {
+export default function (state = initialState, action = {}) {
   switch (action.type) {
     case `${actionTypes.DISPLAY_ITEM}`:
       const { menuItem, color } = action.payload;
-      let start = "default";
+      let start = 'default';
       //TODO: Change to switch with more toolbars
-      if (menuItem === "Portfolio") {
-        start = "Homepage";
+      if (menuItem === 'Portfolio') {
+        start = 'Homepage';
       }
       return {
         ...state,
         location: menuItem,
         color: color,
-        toolbar: start
+        toolbar: start,
       };
 
     case `${actionTypes.TOOLBAR_ITEM}`:
       return {
         ...state,
-        toolbar: action.payload
+        toolbar: action.payload,
       };
 
     default:

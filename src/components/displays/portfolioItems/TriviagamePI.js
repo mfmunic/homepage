@@ -1,23 +1,20 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import triviagameText from "../texts/TriviagameText";
+import triviagameText from '../texts/TriviagameText';
 
 class Triviagame extends Component {
   render() {
     return (
-      <div id="triviagamePI">
+      <div id='triviagamePI'>
         <img
-          className="preview"
-          id="triviagame"
-          src={require("../../utils/images/triviagameSG.png")}
-          alt="Trivia game"
+          className='preview'
+          id='triviagame'
+          src={require('../../utils/images/triviagameSG.png')}
+          alt='Trivia game'
         />
-        <a
-          href="https://mfmunic.github.io/triviagame/"
-          target="_blank"
-          className="buttonLinks"
-        >
+        {/* eslint-disable-next-line */}
+        <a href='https://mfmunic.github.io/triviagame/' target='_blank' className='buttonLinks'>
           <button>Trivia Game</button>
         </a>
         <p>{triviagameText}</p>
@@ -29,7 +26,7 @@ class Triviagame extends Component {
 function mapStateToProps(state) {
   return {
     routing: state.routing,
-    display: state.display
+    display: state.display,
   };
 }
 
